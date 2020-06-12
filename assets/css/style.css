@@ -107,7 +107,7 @@ h1 {
 
 .split.left {
     left: 0;
-    background: url('/assets/img/Left-right-brain-neon.jpeg') center center no-repeat;
+    background: url('../img/left.jpeg') center center no-repeat;
     background-size: cover;
 }
 
@@ -121,8 +121,9 @@ h1 {
 
 .split.right {
     right: 0;
-    background: url('/assets/img/Left-right-brain-neon\ 2.jpeg') center center no-repeat;
+    background: url('../img/right.jpeg') center center no-repeat;
     background-size: cover;
+    z-index: 1;
 }
 
 .split.right:before {
