@@ -1,0 +1,188 @@
+:root {
+    --container: #222222;
+    --left: rgba(28, 30, 175, 0.7);
+    --left-btn-hover: rgba(150, 139, 245, 0.3);
+    --right: rgba(245, 76, 217, 0.7);
+    --right-btn-hover: rgba(34, 19, 165, 0.3);
+    --hover-width: 70%;
+    --else-width: 30%;
+    --reactionSpeed: 700ms;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-wrapper {
+    background-color: rgb(80, 77, 77);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.background {
+    background-size: cover;
+    background-color: black;
+ 
+}
+
+.perBackground {
+    background-color: black;
+    background-size: cover;
+}
+
+h1 {
+    font-size: xx-large;
+    color: whitesmoke;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.pageFontPer {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(232, 12, 240);
+}
+
+.pageFont {
+    color: rgb(0, 225, 255);
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Button FX */
+
+.button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    height: 2.5rem;
+    padding-top: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    color: whitesmoke;
+    border: whitesmoke solid 0.2rem;
+    font: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+}
+
+.split.left .button:hover {
+    background-color: var(--left-btn-hover);
+    border-color: var(--left-btn-hover);
+}
+
+.split.right .button:hover {
+    background-color: var(--right-btn-hover);
+    border-color: var(--right-btn-hover);
+}
+
+/* Page Image Cover */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--container);
+}
+
+/* Split Images and Postioning */ 
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background: url('./img/Left-right-brain-neon.jpeg') center center no-repeat;
+    background-size: cover;
+}
+
+.split.left:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--left);
+}
+
+.split.right {
+    right: 0;
+    background: url('./img/Left-right-brain-neon\ 2.jpeg') center center no-repeat;
+    background-size: cover;
+}
+
+.split.right:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--right);
+}
+
+.split.left, .split.right, .split.left:before, .split.right:before {
+    transition: var(--reactionSpeed) all ease-in-out;
+}
+
+/* Hover Prominent Side Display*/
+
+.hover-left .left {
+    width: var(--hover-width);   
+}
+
+.hover-left .right {
+    width: var(--else-width);
+}
+
+.hover-left .right {
+    z-index: 2;
+}
+
+/* Hover Prominent Side Display Reverse */
+
+.hover-right .right {
+    width: var(--hover-width);   
+}
+
+.hover-right .left {
+    width: var(--else-width);
+}
+
+.hover-right .left {
+    z-index: 2;
+}
+
+
+/* Media Queries for Tablet and Mobile Devices */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 12rem;
+    }
+}
+
+@media (max-height: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 12rem;
+    }
+}
