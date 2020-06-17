@@ -1,0 +1,17 @@
+.lt-grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr;
+  grid-template-rows: 1.4fr 1.2fr;
+  gap: 2px 2px;
+ grid-template-areas: "Hello lt-Weather Task-Bar" "Dev-Tools Dev-Test Task-Bar"
+}
+
+.lt-Hello { grid-area: lt-Hello; }
+
+.lt-Weather { grid-area: lt-Weather; }
+
+.lt-Task-Bar { grid-area: lt-Task-Bar; }
+
+.lt-Dev-Tools { grid-area: lt-Dev-Tools; }
+
+.lt-Dev-Test { grid-area: lt-Dev-Test; }
