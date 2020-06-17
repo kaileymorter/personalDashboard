@@ -63,6 +63,7 @@ var displaySearchedNews = function(searchData, searchTerm){
     newsCardEl.textContent = "";
     
     var searchHeader = document.createElement("h3");
+    searchHeader.className = "news-header";
     searchHeader.textContent = "Searched Topic: " + searchTerm;
     newsCardEl.appendChild(searchHeader);
 

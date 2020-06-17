@@ -1,17 +1,22 @@
 /* News Styles Added */
 .news-card {
-    background-color: rgba(28, 30, 175, 1);
+    background-color:white;
     border-radius: 5px;
     margin: 10px;
 }
+
+.news-header {
+    color: rgba(28, 30, 175, 0.7);
+}
 .news-body {
-    background-color: rgba(28, 30, 175, 1);
+    background-color:white;
     box-shadow: none;
 }
 
 .news-title {
     font-family: Courier New, Courier, monospace;
     font-size: 22px;
+    color: rgba(28, 30, 175, 0.7);
 }
 
 .news-link {
@@ -22,7 +27,7 @@
 }
 
 .news-input {
-    color: white;
+    color: rgba(28, 30, 175, 0.7);
     font-family: Courier New, Courier, monospace;
 }
 
@@ -38,8 +43,8 @@
     padding: 15px 32px;
 }
 .news-btn:hover{
-    background-color: white;
-    color: rgba(28, 30, 175, 0.7);
+    background-color: rgba(28, 30, 175, 0.7);
+    color: white;
 }
 
 /* END of NEWS Styles */
