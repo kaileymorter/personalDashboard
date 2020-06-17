@@ -1,3 +1,4 @@
+//START OF WEATHER JS//
 var userFormEl = document.querySelector("#userForm");
 var nameInputEl = document.querySelector("#citySearch");
 var searchedCityEl = document.querySelector("#city");
@@ -63,8 +64,9 @@ var displayCurrent = function (data) {
 }
 
 userFormEl.addEventListener("submit", formSubmitHandler);
+//END OF WEATHER JS//
 
-//NEWS JS
+//START OF NEWS JS//
 var newsCardEl = document.getElementById("news-card");
 var newsSearchForm = document.getElementById("news-search");
 var newsInputEl = document.getElementById("news-input")
@@ -155,3 +157,4 @@ var displaySearchedNews = function(searchData, searchTerm){
 
 getNews();
 newsSearchForm.addEventListener("submit", newsSubmitHandler);
+//END OF NEWS JS//
