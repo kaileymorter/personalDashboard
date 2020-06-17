@@ -60,10 +60,19 @@
         <h2 class="">Task List</h2>
       </div>
 
+
       <!-- News -->
-      <div class="col s12 m2 teal accent-1">
-        <h2 class="">News</h2>
-      </div>
+      <div class="col s12 m2 teal accent-1 news-card">
+        <div class="card news-body">
+            <div class="card-content white-text">
+              <span class="card-title" id="news-card"><h3 class="news-header">Top News Today:</h3></span>
+              <form id="news-search">
+                <h4 class="news-header">Search News Topics</h4>
+                <input id="news-input" class="news-input" type="text" placeholder="Enter Keyword">
+                <button type="submit" class="news-btn">Search</button>
+            </form>
+          </div>
+        </div>
     </div>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
