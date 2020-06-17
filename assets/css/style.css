@@ -215,8 +215,38 @@ h1 {
     border: solid 2px black;
     color: black;
 }
-/* end of mews styling*/
+/* end of news styling*/
 
+/*Daily Task Styling*/
+.task-container {
+    border-radius: 3px;
+    margin: 10px;
+}
+.task-header {
+    text-align: center;
+}
+.task-row {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.task-card {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.save-btn {
+    margin-top: 15px;
+    background-color: black !important;
+}
+
+.text-input {
+    border-bottom-color: black !important;
+}
+
+.text-input:focus {
+    border-bottom-color: black !important;
+}
+/*End of Task Styling*/
 
 /* Media Queries for Tablet and Mobile Devices */
 @media (max-width: 800px) {
