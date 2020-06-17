@@ -5,14 +5,22 @@
     margin: 5px;
 }
 
-.materialize-textarea:focus+label{
-    color: black !important;
-  }
-
-textarea.materialize-textarea:focus {
-    border-bottom-color: black !important;
-    box-shadow: 0 1px 0 0 #000;
+.task-header {
+    text-align: center;
 }
+
+.task-row {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.task-card {
+    border: none;
+    box-shadow: none;
+}
+.save-btn {
+    margin-top: 15px;
+}
+
 
 
 :root {
