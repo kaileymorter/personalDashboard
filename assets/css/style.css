@@ -41,6 +41,7 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+
 }
 
 .nav-wrapper {
@@ -191,6 +192,87 @@ h1 {
     z-index: 2;
 }
 
+/* News styling*/
+.news-card {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.news-header {
+    color:black;
+}
+.news-body {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.news-title {
+    font-family: Courier New, Courier, monospace;
+    font-size: 22px;
+    color: black;
+}
+
+.news-link {
+    color: blue;
+    font-family: Courier New, Courier, monospace;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.news-input {
+    color: black;
+    font-family: Courier New, Courier, monospace;
+}
+
+.news-input:focus {
+    border-bottom: 2px solid white !important;
+  }
+
+.news-btn, .news-btn:focus{
+    background-color: black;
+    color: white;
+    font-family: Courier New, Courier, monospace;
+    border: none;
+    padding: 15px 32px;
+}
+.news-btn:hover{
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+}
+/* end of news styling*/
+
+/*Daily Task Styling*/
+.task-container {
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 10px;
+}
+.task-header {
+    text-align: center;
+}
+.task-row {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.task-card {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.save-btn {
+    margin-top: 15px;
+    background-color: black !important;
+}
+
+.text-input {
+    border-bottom-color: black !important;
+}
+
+.text-input:focus {
+    border-bottom-color: black !important;
+}
+/*End of Task Styling*/
 
 /* Media Queries for Tablet and Mobile Devices */
 @media (max-width: 800px) {
