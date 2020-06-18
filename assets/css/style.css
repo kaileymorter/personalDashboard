@@ -247,7 +247,12 @@ h1 {
     border-bottom-color: black !important;
 }
 
-#clockDiv, #weatherDiv, #taskDiv, #newsDiv, #quoteDiv {
+#clockDiv, 
+#weatherDiv, 
+#taskDiv, 
+#newsDiv, 
+#quoteDiv,
+.linkImage {
     margin: 5px 10px;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
@@ -256,8 +261,6 @@ h1 {
 #formContainer {
     background-color: black;
     border-radius: 5px;
-    width: 25%;
-    height: 25%;
     text-align: left;
     padding: 10px;
     margin: 5px 10px;

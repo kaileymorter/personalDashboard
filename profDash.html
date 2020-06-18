@@ -21,93 +21,143 @@
     </div>
   </nav>
 
-  <!--Sign in Professional Dash-->
-
-  <div id="formContainer2">
-    <h2>Sign In<Input:datetime-local></Input:datetime-local>
-    </h2>
-
-    <input class="username" type="text" name="username" placeholder="Username" id="usernameInput">
-    <input class="password" type="password" name="username" placeholder="Password" id="passwordInput">
-    <button class="createUser" id="createBtn" onclick="createUser();">Create User</button>
-    <button class="login" id="loginBtn" onclick="validation();">Sign In</button>
-    <p id="notice"></p>
-  </div>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-
-  <!--Resource Image links-->
-  <div>
-    <h2 class="headers">Resources:</h2>
-    <a class='imgLink' href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">
-      <img border="0" alt="The Net Ninja" src="./assets/img/youtube-logo-png-3575.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://www.w3schools.com/">
-      <img border="0" alt="w3schools" src="./assets/img/unnamed.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://developer.mozilla.org/en-US/">
-      <img border="0" alt="MDN Dev Net" src="./assets/img/opengraph-logo.72382e605ce3.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://courses.bootcampspot.com/">
-      <img border="0" alt="U of U Bootcamp" src="./assets/img/BlockU_400px.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://app.pluralsight.com/library/">
-      <img border="0" alt="pluralsight" src="./assets/img/51-Hci2bYjL.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://www.udemy.com/">
-      <img border="0" alt="udemy" src="./assets/img/NewUlogo-large-1.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://github.com/">
-      <img border="0" alt="GitHub" src="./assets/img/github_PNG20.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://dribbble.com/">
-      <img border="0" alt="dribbble" src="./assets/img/untitled-1.gif" width="100" height="100">
-    </a>
-  </div>
-  </br>
-
-  <!--Job Resource Image Links-->
-  <div>
-    <h2 class="headers">Get Hired:</h2>
-    <a class='imgLink' href="https://www.linkedin.com/feed/">
-      <img border="0" alt="linkedin" src="./assets/img/linkedin-blue-style-logo-png-0.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://www.indeed.com/">
-      <img border="0" alt="indeed" src="./assets/img/com.indeed.android.jobsearch.png" width="100" height="100">
-    </a>
-    <a class='imgLink' href="https://www.glassdoor.com/member/home/index.htm">
-      <img border="0" alt="glassdoor" src="./assets/img/glassdoorlogo.png" width="100" height="100">
-    </a>
-
-  </div>
-
-  <!--Food Delivery Shameless Plug-->
-  <div>
-    <h2 class="headers">Fuel:</h2>
-    <a class='imgLink'
-      href="https://www.grubhub.com/restaurant/narra-asian-bistro-6550-s-big-cottonwood-canyon-rd-ste-b-holladay/1160087">
-      <img border="0" alt="Narra Asian Bistro" src="./assets/img/unnamed-1.png" width="100" height="100">
-    </a>
-  </div>
-
-  <!--Password Gen-->
-  <div>
-    <div class="wrapper">
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea readonly id="password" placeholder="Your Secure Password"
-            aria-label="Generated Password"></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate</button>
+  <div class="container">
+    <div class="row">
+      <div class="col m12 l3">
+        <!--Sign in Professional Dash-->
+        <div id="formContainer2">
+          <h2>Sign In<Input:datetime-local></Input:datetime-local>
+          </h2>
+          <input class="username" type="text" name="username" placeholder="Username" id="usernameInput">
+          <input class="password" type="password" name="username" placeholder="Password" id="passwordInput">
+          <button class="createUser" id="createBtn" onclick="createUser();">Create User</button>
+          <button class="login" id="loginBtn" onclick="validation();">Sign In</button>
+          <p id="notice"></p>
         </div>
       </div>
+      <div class="col m12 l9">
+        <!--Password Gen-->
+        <div class="row grey" style="padding: 1rem;">
+          <div class="col">
+            <div class="wrapper">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Generate a Password</h2>
+                </div>
+                <div class="card-body">
+                  <textarea readonly id="password" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+                </div>
+                <div class="card-footer">
+                  <button id="generate" class="btn">Generate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Resource Image links-->
+        <div class="row grey" style="padding: 1rem;">
+          <h2 class="headers black-text">Learn:</h2>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">
+              <img border="0" alt="The Net Ninja" src="./assets/img/youtube-logo-png-3575.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://www.w3schools.com/">
+              <img border="0" alt="w3schools" src="./assets/img/unnamed.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col">
+            <a class='img linkImgLink' href="https://developer.mozilla.org/en-US/">
+              <img border="0" alt="MDN Dev Net" src="./assets/img/opengraph-logo.72382e605ce3.png" width="100"
+                height="100">
+            </a>
+          </div>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://courses.bootcampspot.com/">
+              <img border="0" alt="U of U Bootcamp" src="./assets/img/BlockU_400px.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://app.pluralsight.com/library/">
+              <img border="0" alt="pluralsight" src="./assets/img/51-Hci2bYjL.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://www.udemy.com/">
+              <img border="0" alt="udemy" src="./assets/img/NewUlogo-large-1.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://github.com/">
+              <img border="0" alt="GitHub" src="./assets/img/github_PNG20.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col linkImg">
+            <a class='imgLink' href="https://dribbble.com/">
+              <img border="0" alt="dribbble" src="./assets/img/untitled-1.gif" width="100" height="100">
+            </a>
+          </div>
+        </div>
+
+        <!--Job Resource Image Links-->
+        <div class="row grey" style="padding: 1rem;">
+          <h2 class="headers ">Get Hired:</h2>
+          <div class="col">
+            <a class='imgLink' href="https://www.linkedin.com/feed/">
+              <img border="0" alt="linkedin" src="./assets/img/linkedin-blue-style-logo-png-0.png" width="100"
+                height="100">
+            </a>
+          </div>
+          <div class="col">
+            <a class='imgLink' href="https://www.indeed.com/">
+              <img border="0" alt="indeed" src="./assets/img/com.indeed.android.jobsearch.png" width="100" height="100">
+            </a>
+          </div>
+          <div class="col">
+            <a class='imgLink' href="https://www.glassdoor.com/member/home/index.htm">
+              <img border="0" alt="glassdoor" src="./assets/img/glassdoorlogo.png" width="100" height="100">
+            </a>
+          </div>
+        </div>
+
+        <!--Food Delivery Shameless Plug-->
+        <div class="row grey" style="padding: 1rem;">
+          <div class="col">
+            <h2 class="headers">Fuel:</h2>
+            <a class='imgLink'
+              href="https://www.grubhub.com/restaurant/narra-asian-bistro-6550-s-big-cottonwood-canyon-rd-ste-b-holladay/1160087">
+              <img border="0" alt="Narra Asian Bistro" src="./assets/img/unnamed-1.png" width="100" height="100">
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div>
+
+    </div>
+    </br>
+
+
+    <div>
+
+
+    </div>
+
+
+    <div>
+
+    </div>
+
+
+    <div>
+
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
