@@ -48,26 +48,26 @@ var displayCurrent = function (data) {
     var currentTemp = data.main.temp;
     var currentHum = data.main.humidity;
     var currentWind = data.wind.speed;
-    var currentIcon = data.weather[0].main
-    var iconEl = $("#icon-info");
-    var nowDate = m.format('L');
+    // var currentIcon = data.weather[0].main
+    // var iconEl = $("#icon-info");
+    // var nowDate = m.format('L');
     // clear current content
     searchedCityEl.textContent = "";
 
     // display info
-    searchedCityEl.textContent = currentCity + ' (' + nowDate + ')';
+    searchedCityEl.textContent = currentCity; //+ ' (' + nowDate + ')';
     todayTemp.textContent = "Temp: " + currentTemp + " \xB0 F";
     todayHum.textContent = "Humidity: " + currentHum + " %";
     todayWind.textContent = "Wind: " + currentWind + " MPH";
-    
-    
-    if (currentIcon === "Clear") {
-        iconEl.addClass("oi oi-sun")
-    } else if (currentIcon === "Clouds") {
-        iconEl.addClass("oi oi-cloud")
-    } else if (currentIcon === "Rain") {
-        iconEl.addClass("oi oi-rain")
-    }
+
+
+    // if (currentIcon === "Clear") {
+    //     iconEl.addClass("oi oi-sun")
+    // } else if (currentIcon === "Clouds") {
+    //     iconEl.addClass("oi oi-cloud")
+    // } else if (currentIcon === "Rain") {
+    //     iconEl.addClass("oi oi-rain")
+    // }
 }
 
 userFormEl.addEventListener("submit", formSubmitHandler);
@@ -78,7 +78,7 @@ var newsCardEl = document.getElementById("news-card");
 var newsSearchForm = document.getElementById("news-search");
 var newsInputEl = document.getElementById("news-input")
 
-var newsSubmitHandler = function(event){
+var newsSubmitHandler = function (event) {
     event.preventDefault();
 
     var searchTerm = newsInputEl.value.trim();
@@ -88,8 +88,8 @@ var newsSubmitHandler = function(event){
 }
 
 //get news
-var getNews = function() {
-    
+var getNews = function () {
+
     fetch('https://gnews.io/api/v3/topics/nation?&max=3&token=43720a239752027317cec258fed618fc')
         .then(function (response) {
             return response.json();
@@ -100,9 +100,9 @@ var getNews = function() {
         });
 }
 //display news
-var displayNews = function(data) {
-    
-    for(var i=0; i<data.articles.length; i++){
+var displayNews = function (data) {
+
+    for (var i = 0; i < data.articles.length; i++) {
         //find and define news data
         var newsTitle = data.articles[i].title;
         var newsLink = data.articles[i].url;
@@ -123,8 +123,8 @@ var displayNews = function(data) {
 }
 
 //search news
-var searchNews = function(searchTerm){
-    fetch('https://gnews.io/api/v3/search?q=' + searchTerm +'&max=3&token=43720a239752027317cec258fed618fc')
+var searchNews = function (searchTerm) {
+    fetch('https://gnews.io/api/v3/search?q=' + searchTerm + '&max=3&token=43720a239752027317cec258fed618fc')
         .then(function (response) {
             return response.json();
         })
@@ -135,15 +135,15 @@ var searchNews = function(searchTerm){
 }
 
 //display searched topic
-var displaySearchedNews = function(searchData, searchTerm){
+var displaySearchedNews = function (searchData, searchTerm) {
     newsCardEl.textContent = "";
-    
+
     var searchHeader = document.createElement("h3");
     searchHeader.className = "news-header";
     searchHeader.textContent = "Searched Topic: " + searchTerm;
     newsCardEl.appendChild(searchHeader);
 
-    for(var i=0; i<searchData.articles.length; i++){
+    for (var i = 0; i < searchData.articles.length; i++) {
         //find and define news data
         var searchTitle = searchData.articles[i].title;
         var searchLink = searchData.articles[i].url;
@@ -167,24 +167,24 @@ newsSearchForm.addEventListener("submit", newsSubmitHandler);
 //END OF NEWS JS//
 
 //START OF TASK LIST JS//
-$('.save-btn').on('click', function(){
+$('.save-btn').on('click', function () {
     var taskNumber = $(this).attr('id');
     var task = $(this).siblings('div.task-div').children("input").val();
-  
+
     localStorage.setItem(taskNumber, task);
-  })
+})
 
-  $("#task1").children("input").val(localStorage.getItem("task-1"));
+$("#task1").children("input").val(localStorage.getItem("task-1"));
 
-  $("#task2").children("input").val(localStorage.getItem("task-2"));
-  
-  $("#task3").children("input").val(localStorage.getItem("task-3"));
-  
-  $("#task4").children("input").val(localStorage.getItem("task-4"));
-  
-  $("#task5").children("input").val(localStorage.getItem("task-5"));
-  //END OF TASK LIST JS//
+$("#task2").children("input").val(localStorage.getItem("task-2"));
 
-  $(document).ready(function() {
+$("#task3").children("input").val(localStorage.getItem("task-3"));
+
+$("#task4").children("input").val(localStorage.getItem("task-4"));
+
+$("#task5").children("input").val(localStorage.getItem("task-5"));
+//END OF TASK LIST JS//
+
+$(document).ready(function () {
     clock();
 })

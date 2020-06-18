@@ -247,6 +247,12 @@ h1 {
     border-bottom-color: black !important;
 }
 
+#clockDiv, #weatherDiv, #taskDiv, #newsDiv, #quoteDiv {
+    margin: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #formContainer {
     background-color: black;
     border-radius: 5px;
@@ -254,7 +260,7 @@ h1 {
     height: 25%;
     text-align: left;
     padding: 10px;
-    margin: 20px 20px 20px 20px;
+    margin: 5px 10px;
     color:  rgb(232, 12, 240);
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
