@@ -8,5 +8,5 @@ Personal dashboard that shows what you want to see.
 ## Technology
 
 ### Links
-REPO: 
-DEPLOYMENT:
+REPO: https://github.com/theodorebutts/personalDashboard
+DEPLOYMENT: https://theodorebutts.github.io/personalDashboard/
