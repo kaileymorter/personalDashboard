@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  
   <title>Web Dev Dashboard</title>
 </head>
 
@@ -17,13 +18,13 @@
       <a href="#" class="brand-logo center">Personal Dashboard</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./perDash.html">WEB DEV Dashboard</a></li>
+        <li><a href="./profDash.html">WEB DEV Dashboard</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container">
-    
+
     <div class="row">
       <!-- Welcome/greeting -->
       <div class="col s12 m4 red">
@@ -56,77 +57,92 @@
       </div>
 
       <!-- task list -->
-        <div class="col s12 m2 purple accent-1 container">
-          <div class="row">
-            <div class="task-container">
-              <h4 class="task-header">Daily Tasks</h4>
-              <div class="card task-card">
-    
-                <div class="row task-row">
-                  <div class="input-field col s10 task-div" id="task1">
-                    <input type="text" placeholder="Enter Task" class="text-input">
-                  </div>
-                  <a class="btn-floating btn-small save-btn" id="task-1"><i class="material-icons">+</i></a>
+      <div class="col s12 m2 purple accent-1 container">
+        <div class="row">
+          <div class="task-container">
+            <h4 class="task-header">Daily Tasks</h4>
+            <div class="card task-card">
+
+              <div class="row task-row">
+                <div class="input-field col s10 task-div" id="task1">
+                  <input type="text" placeholder="Enter Task" class="text-input">
                 </div>
-    
-                 <div class="row task-row">
-                  <div class="input-field col s10 task-div" id="task2">
-                    <input type="text" placeholder="Enter Task" class="text-input">
-                  </div>
-                  <a class="btn-floating btn-small waves-effect save-btn" id="task-2"><i class="material-icons">+</i></a>
-                </div>
-    
-                <div class="row task-row">
-                  <div class="input-field col s10 task-div" id="task3">
-                    <input type="text" placeholder="Enter Task" class="text-input">
-                  </div>
-                  <a class="btn-floating btn-small waves-effect save-btn" id="task-3"><i class="material-icons">+</i></a>
-                </div>
-    
-                 <div class="row task-row">
-                  <div class="input-field col s10 task-div" id="task4">
-                    <input type="text" placeholder="Enter Task" class="text-input">
-                  </div>
-                  <a class="btn-floating btn-small waves-effect save-btn" id="task-4"><i class="material-icons">+</i></a>
-                </div>
-    
-                <div class="row task-row">
-                  <div class="input-field col s10 task-div" id="task5">
-                    <input type="text" placeholder="Enter Task" class="text-input">
-                  </div>
-                  <a class="btn-floating btn-small waves-effect save-btn" id="task-5"><i class="material-icons">+</i></a>
-                </div>
-    
+                <a class="btn-floating btn-small save-btn" id="task-1"><i class="material-icons">+</i></a>
               </div>
+
+              <div class="row task-row">
+                <div class="input-field col s10 task-div" id="task2">
+                  <input type="text" placeholder="Enter Task" class="text-input">
+                </div>
+                <a class="btn-floating btn-small waves-effect save-btn" id="task-2"><i class="material-icons">+</i></a>
+              </div>
+
+              <div class="row task-row">
+                <div class="input-field col s10 task-div" id="task3">
+                  <input type="text" placeholder="Enter Task" class="text-input">
+                </div>
+                <a class="btn-floating btn-small waves-effect save-btn" id="task-3"><i class="material-icons">+</i></a>
+              </div>
+
+              <div class="row task-row">
+                <div class="input-field col s10 task-div" id="task4">
+                  <input type="text" placeholder="Enter Task" class="text-input">
+                </div>
+                <a class="btn-floating btn-small waves-effect save-btn" id="task-4"><i class="material-icons">+</i></a>
+              </div>
+
+              <div class="row task-row">
+                <div class="input-field col s10 task-div" id="task5">
+                  <input type="text" placeholder="Enter Task" class="text-input">
+                </div>
+                <a class="btn-floating btn-small waves-effect save-btn" id="task-5"><i class="material-icons">+</i></a>
+              </div>
+
             </div>
           </div>
         </div>
+      </div>
 
 
       <!-- News -->
       <div class="col s12 m2 teal accent-1 news-card">
         <div class="card news-body">
-            <div class="card-content white-text">
-              <span class="card-title" id="news-card"><h3 class="news-header">Top News Today:</h3></span>
-              <form id="news-search">
-                <h4 class="news-header">Search News Topics</h4>
-                <input id="news-input" class="news-input" type="text" placeholder="Enter Keyword">
-                <button type="submit" class="news-btn">Search</button>
+          <div class="card-content white-text">
+            <span class="card-title" id="news-card">
+              <h3 class="news-header">Top News Today:</h3>
+            </span>
+            <form id="news-search">
+              <h4 class="news-header">Search News Topics</h4>
+              <input id="news-input" class="news-input" type="text" placeholder="Enter Keyword">
+              <button type="submit" class="news-btn">Search</button>
             </form>
           </div>
         </div>
-    </div>
+      </div>
+
+      <!--Sign in Personal Dash-->
+      <div id="formContainer">
+        <h2>Sign In<Input:datetime-local></Input:datetime-local>
+        </h2>
+
+        <input class="username" type="text" name="username" placeholder="Username" id="usernameInput">
+        <input class="password" type="password" name="username" placeholder="Password" id="passwordInput">
+        <button class="createUser" id="createBtn" onclick="createUser();">Create User</button>
+        <button class="login" id="loginBtn" onclick="validation();">Sign In</button>
+        <p id="notice"></p>
+      </div>
   </main>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+  <script src="./assets/js/signIn.js"></script>
   <script src="./assets/js/personal.js"></script>
 </body>
 

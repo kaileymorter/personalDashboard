@@ -246,6 +246,40 @@ h1 {
 .text-input:focus {
     border-bottom-color: black !important;
 }
+
+#formContainer {
+    background-color: black;
+    border-radius: 5px;
+    width: 25%;
+    height: 25%;
+    text-align: left;
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    color:  rgb(232, 12, 240);
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#createBtn {
+    margin-top: 10px;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+  
+#loginBtn {
+      margin-top: 10px;
+      font-size: x-large;
+      font-family: 'Courier New', Courier, monospace;
+}
+  
+.username {
+    color: white;
+}
+  
+.password {
+    color: white;
+}
 /*End of Task Styling*/
 
 /* Media Queries for Tablet and Mobile Devices */
