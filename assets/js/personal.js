@@ -1,3 +1,10 @@
+//CLOCK JS//
+function clock() {
+    $('#clock').html(moment().format('MMMM Do YYYY, h:mm:ss a'));
+}
+setInterval(clock, 1000);
+//END OF CLOCK JS//
+
 //START OF WEATHER JS//
 var userFormEl = document.querySelector("#userForm");
 var nameInputEl = document.querySelector("#citySearch");
@@ -177,3 +184,7 @@ $('.save-btn').on('click', function(){
   
   $("#task5").children("input").val(localStorage.getItem("task-5"));
   //END OF TASK LIST JS//
+
+  $(document).ready(function() {
+    clock();
+})
