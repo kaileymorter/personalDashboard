@@ -282,6 +282,15 @@ h1 {
 }
 /*End of Task Styling*/
 
+/*Clock Styling*/
+.clock-div {
+    border-radius: 3px;
+}
+.clock {
+    padding: 10px;
+}
+/*End of Clock Styling*/
+
 /* Media Queries for Tablet and Mobile Devices */
 @media (max-width: 800px) {
     h1 {
