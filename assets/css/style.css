@@ -218,10 +218,12 @@ h1 {
 /*Daily Task Styling*/
 #taskDiv {
     height: 300px;
+    overflow: scroll;
 }
 .task-container {
     border-radius: 3px;
     margin: 10px;
+    overflow: scroll;
 }
 
 .task-row {
@@ -232,11 +234,21 @@ h1 {
     background-color: transparent;
     border: none;
     box-shadow: none;
+
 }
 .save-btn {
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: black !important;
 }
+
+.save-btn:hover {
+    background-color: white !important;
+}
+
+.save-icon:hover {
+    color: black !important;
+}
+
 
 .text-input {
     border-bottom-color: black !important;

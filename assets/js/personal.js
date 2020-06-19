@@ -181,9 +181,12 @@ newsSearchForm.addEventListener("submit", newsSubmitHandler);
 //END OF NEWS JS//
 
 //START OF TASK LIST JS//
+var deleteBtn = document.querySelector('.delete-btn')
+
 $('.save-btn').on('click', function () {
     var taskNumber = $(this).attr('id');
     var task = $(this).siblings('div.task-div').children("input").val();
+    console.log(task);
 
     localStorage.setItem(taskNumber, task);
 })
@@ -197,6 +200,7 @@ $("#task3").children("input").val(localStorage.getItem("task-3"));
 $("#task4").children("input").val(localStorage.getItem("task-4"));
 
 $("#task5").children("input").val(localStorage.getItem("task-5"));
+
 //END OF TASK LIST JS//
 
 $(document).ready(function () {
