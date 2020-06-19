@@ -94,7 +94,6 @@ h1 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: var(--container);
 }
 
 /* Split Images and Postioning */ 
@@ -218,6 +217,9 @@ h1 {
 /* end of news styling*/
 
 /*Daily Task Styling*/
+#taskDiv {
+    height: 300px;
+}
 .task-container {
     border-radius: 3px;
     margin: 10px;
@@ -241,6 +243,7 @@ h1 {
 
 .text-input {
     border-bottom-color: black !important;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .text-input:focus {
@@ -259,35 +262,36 @@ h1 {
 }
 
 #formContainer {
-    background-color: black;
     border-radius: 5px;
     text-align: left;
     padding: 10px;
     margin: 5px 10px;
-    color:  rgb(232, 12, 240);
+    color:  black;
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
 }
 
 #createBtn {
     margin-top: 10px;
-    font-size: x-large;
+    background-color: black;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
 }
   
   
 #loginBtn {
       margin-top: 10px;
-      font-size: x-large;
+      background-color: black;
+      color: white;
       font-family: 'Courier New', Courier, monospace;
 }
   
 .username {
-    color: white;
+    color: black;
 }
   
 .password {
-    color: white;
+    color: black;
 }
 /*End of Task Styling*/
 
@@ -296,9 +300,30 @@ h1 {
     border-radius: 3px;
 }
 .clock {
+    margin: 10px;
     padding: 10px;
+    text-align: center;
 }
 /*End of Clock Styling*/
+
+.sign-in {
+    height: 300px;
+    background-color: white;
+}
+
+.weather {
+    height: 300px;
+}
+
+.weather-btn {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+#citySearch {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 /* Media Queries for Tablet and Mobile Devices */
 @media (max-width: 800px) {
