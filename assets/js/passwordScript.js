@@ -14,15 +14,15 @@ var nums = true;
 var chars = true;
 
 // this will be used for length of password
-var length = 0;  
+var length = 0;
 
-function clipCopy(){
+function clipCopy() {
   var copy = document.getElementById("password");
   copy.select();
   document.execCommand("copy");
-} 
+}
 
-function showLength(number){
+function showLength(number) {
   length = number
   document.getElementById('lengthVal').innerHTML = number
 }
@@ -33,34 +33,25 @@ function generatePassword() {
   passwordArray = [];
   length = 0;
   length = document.getElementById("passLength").value;
-  
-  // resetting array and length if user wants to generate another password
-  
 
-  // finding password criteria
-  // lowers = confirm("Would you like to use lower case letters?");
-  // uppers = confirm("Would you like to use upper case letters?");
-  // nums = confirm("Would you like to use numbers?");
-  // chars = confirm("Would you like to use special characters?");
-  // console.log("lower: " + lowers + " uppers: " + uppers + " nums: " + nums + " chars: " + chars);
 
-  // creates passwordArray depending on user criteria
-  // checking if user wants lower caser letters
+  // Creates passwordArray depending on user criteria
+  // Checking if user wants lower caser letters
   if (lowers) {
     passwordArray = passwordArray.concat(lowerCase);
   }
 
-  // checking if user wants upper case letters
+  // Checking if user wants upper case letters
   if (uppers) {
     passwordArray = passwordArray.concat(upperCase);
   }
 
-  // checking if user wants numbers 
+  // Checking if user wants numbers 
   if (nums) {
     passwordArray = passwordArray.concat(numOnly);
   }
 
-  // checking if user wants special characters
+  // Checking if user wants special characters
   if (chars) {
     passwordArray = passwordArray.concat(charOnly);
   }
@@ -70,7 +61,7 @@ function generatePassword() {
   return generatedPassword;
 }
 
-// randomly generates a password based off user criteria
+// Randomly generates a password based off user criteria
 function randomPass(userArray) {
   var randomPassword = "";
   for (var i = 0; i < length; i++) {

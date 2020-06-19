@@ -24,6 +24,7 @@
   <div class="container">
     <div class="row">
       <div class="col m12 l3">
+        
         <!--Sign in Professional Dash-->
         <div id="formContainer2" class="grey darken-2">
           <h2 class="sign-in-header">Sign In<Input:datetime-local></Input:datetime-local>
@@ -52,25 +53,13 @@
             <input type="range" min="8" max="128" value="8" id="passLength" onInput="showLength(this.value)">
             <span id="lengthVal">8</span>
 
-            <!-- <div>
-              <input type="checkbox" checked="true" onInput="updateParams(this.name, this.checked)" id="upperCase" name="upperCase" value="upperCase">
-              <label for="upperCase">Upper Case</label><br>
-              <input type="checkbox" checked="true" onInput="updateParams(this.name, this.checked)" id="lowerCase" name="lowerCase" value="lowerCase">
-              <label for="lowerCase">Lower Case</label><br>
-              <input type="checkbox" checked="true" onInput="updateParams(this.name, this.checked)" id="specialChar" name="specialChar" value="specialChar">
-              <label for="specialChar">Special Characters</label><br>
-              <input type="checkbox" checked="true" onInput="updateParams(this.name, this.checked)" id="numbers" name="numbers" value="numbers">
-              <label for="numbers">Numbers</label>
-            </div> -->
             <div class="card-footer">
               <button id="generate" class="btn">Generate</button>
-             
+
               <button id="copy" class="btn" onclick="clipCopy()">Copy to Clipboard</button>
             </div>
           </div>
         </div>
-
-
       </div>
 
       <!--Resource Image links-->
