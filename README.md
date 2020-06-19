@@ -28,8 +28,14 @@ Have a quality README (with unique name, description, technologies used, screens
 ## Technology
 
 Goggle News API
+
 OpenWeather API
+
 GIPHY API
+
+Materialize
+
+jQuery
 
 ## Images
 
