@@ -45,11 +45,11 @@ If you were a web developer you would visit this application to access TWO diffe
 
 If you select personal, you will be presented with a personal dashboard that displays a news, weather, clock, task, and giph widget.
 
-![Screen Shot 2020-06-18 at 7 42 17 PM](https://user-images.githubusercontent.com/62969025/85087903-f95eac80-b19b-11ea-9f0d-03a3f2f9f37d.png)
+![Screen Shot 2020-06-19 at 4 57 25 PM](https://user-images.githubusercontent.com/62969025/85184722-266b9780-b24e-11ea-9fc3-6a0b1cab3d3d.png)
 
 If you select web, you will be presented with a web dashbaord with a password generator, quick links to commonly used web developer resources, and other misc. links
 
-![Screen Shot 2020-06-18 at 7 42 34 PM](https://user-images.githubusercontent.com/62969025/85087904-f9f74300-b19b-11ea-9a9b-97c228cd8462.png)
+![Screen Shot 2020-06-19 at 4 57 34 PM](https://user-images.githubusercontent.com/62969025/85184725-28355b00-b24e-11ea-9ece-14077d37d65d.png)
 
 ### Links
 REPO: https://github.com/theodorebutts/personalDashboard
