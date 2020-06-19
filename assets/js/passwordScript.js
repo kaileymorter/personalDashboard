@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////// Password Gen
+// Password Gen
 
 // user choice arrays
 var lowerCase = [...'abcdefghijklmnopqrstuvwxyz'];
@@ -8,39 +8,41 @@ var charOnly = [...'!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~'];
 var passwordArray = [];
 
 // boolean user choices
-var lowers;
-var uppers;
-var nums;
-var chars;
+var lowers = true;
+var uppers = true;
+var nums = true;
+var chars = true;
 
 // this will be used for length of password
 var length = 0;  
 
+function clipCopy(){
+  var copy = document.getElementById("password");
+  copy.select();
+  document.execCommand("copy");
+} 
+
+function showLength(number){
+  length = number
+  document.getElementById('lengthVal').innerHTML = number
+}
+
 // Assignment code here
 function generatePassword() {
   var generatedPassword;
-  
-  // resetting array and length if user wants to generate another password
   passwordArray = [];
   length = 0;
-
-  // finding length of password and verifying user input
-  while (length === 0) {
-    var userInput = prompt("Enter password length (8-128).");
-    if (userInput >= 8 && userInput <= 128) {
-      length = userInput;
-    } else {
-      alert("Invalid entry, password length must be between (8-128).");
-    }
-  }
-  console.log("length: " + length);
+  length = document.getElementById("passLength").value;
+  
+  // resetting array and length if user wants to generate another password
+  
 
   // finding password criteria
-  lowers = confirm("Would you like to use lower case letters?");
-  uppers = confirm("Would you like to use upper case letters?");
-  nums = confirm("Would you like to use numbers?");
-  chars = confirm("Would you like to use special characters?");
-  console.log("lower: " + lowers + " uppers: " + uppers + " nums: " + nums + " chars: " + chars);
+  // lowers = confirm("Would you like to use lower case letters?");
+  // uppers = confirm("Would you like to use upper case letters?");
+  // nums = confirm("Would you like to use numbers?");
+  // chars = confirm("Would you like to use special characters?");
+  // console.log("lower: " + lowers + " uppers: " + uppers + " nums: " + nums + " chars: " + chars);
 
   // creates passwordArray depending on user criteria
   // checking if user wants lower caser letters
@@ -61,12 +63,6 @@ function generatePassword() {
   // checking if user wants special characters
   if (chars) {
     passwordArray = passwordArray.concat(charOnly);
-  }
-
-  // if the user doesn't choose any criteria
-  if(passwordArray.length === 0){
-    alert("You must select at least 1 of the criteria to continue.");
-    writePassword();
   }
 
   // Setting var generatedPassword to the randomly generated pass
@@ -92,7 +88,7 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.getElementById("password");
 
   passwordText.value = password;
 

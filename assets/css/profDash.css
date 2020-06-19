@@ -52,7 +52,7 @@
 
 .wrapper {
   height: 100%;
-  margin: 20px;
+  margin: 2px;
   padding: 20px;
   color: rgb(0, 225, 255);
   font-size: xx-large;
@@ -102,6 +102,8 @@
   clear: both;
 }
 
+
+
 .btn {
   border: none;
   background-color: rgb(57, 200, 243);
@@ -110,11 +112,11 @@
     0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
-  text-align: center;
+  text-align: center center;
   cursor: pointer;
 }
 
@@ -128,8 +130,6 @@ button[disabled] {
 }
 
 #password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border: none;
   display: block;
