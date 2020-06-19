@@ -13,10 +13,13 @@
     border-radius: 5px;
     text-align: left;
     padding: 10px;
-    margin: 20px 20px 20px 20px;
-    color: rgb(0, 225, 255);
+    margin: 20px;
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.sign-in-header {
+  color: white;
 }
 
 #createBtn {
@@ -41,7 +44,6 @@
 }
 
 /* Password Gen Professional */
-
 *,
 *::before,
 *::after {
@@ -50,11 +52,8 @@
 
 .wrapper {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 20px;
+  padding: 20px;
   color: rgb(0, 225, 255);
   font-size: xx-large;
   font-family: 'Courier New', Courier, monospace;
@@ -148,6 +147,30 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+.pass-gen {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-block {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hire-block {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.fuel-block {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 690px) {
