@@ -343,6 +343,19 @@ h1 {
     border-bottom: 1px solid black !important;
 }
 
+/* The Modal (background) */
+.modal {
+    background-color: white;
+    z-index: 100;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    text-align: center;
+  }
+  
 
 /* Media Queries for Tablet and Mobile Devices */
 @media (max-width: 800px) {

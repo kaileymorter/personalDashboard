@@ -13,17 +13,28 @@ var todayTemp = document.querySelector('#currentTemp');
 var todayWind = document.querySelector('#currentWind');
 var todayHum = document.querySelector('#currentHum');
 var todayUV = document.querySelector('#currentUV');
+var modal = document.getElementById("modal1"); 
+var modalText= document.getElementById("modal-text");
+var modalBtn = document.getElementsByClassName("modal-close")[0];
 
 // fetch current day data from api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid=1a43c0eec6dcda3a7a81a3791424d2bd
 var getCurrentDay = function (name) {
+
     var apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + name + "&appid=1a43c0eec6dcda3a7a81a3791424d2bd&units=imperial";
-    fetch(apiURL)
-        .then(function (response) {
+    fetch(apiURL).then(function(response){
+        if (response.ok) {
             response.json().then(function (data) {
                 displayCurrent(data);
-            })
+            });
+        } else {
+            modal1.style.display = "block";
+            modalText.textContent = "Enter a valid city!";
 
-        });
+            modalBtn.onclick = function(){
+            modal1.style.display = "none"
+            }
+        }
+    });
 }
 
 
@@ -35,11 +46,14 @@ var formSubmitHandler = function (event) {
 
     if (cityName) {
         getCurrentDay(cityName);
-
     } else {
-        alert("Please enter a valid City")
+        modal1.style.display = "block";
+        modalText.textContent = "Enter a City!";
+
+        modalBtn.onclick = function(){
+            modal1.style.display = "none"
+        }
     }
-    // console.log(cityName)
 }
 
 var displayCurrent = function (data) {

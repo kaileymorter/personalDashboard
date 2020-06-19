@@ -35,7 +35,7 @@
     <div class="row">
        <!--Sign in Personal Dash-->
       <div id="formContainer" class="col s12 m12 l4 sign-in blue-grey">
-        <h4>Sign In<Input:datetime-local></Input:datetime-local>
+        <h4>Sign In:<Input:datetime-local></Input:datetime-local>
         </h4>
         <input class="username" type="text" name="username" placeholder="Username" id="usernameInput">
         <input class="password" type="password" name="username" placeholder="Password" id="passwordInput">
@@ -47,7 +47,7 @@
       <!-- weather widget -->
       <div id="weatherDiv" class="col s12 l3 indigo lighten-5 weather light-blue accent-2">
         <div class="row">
-          <h4 class="col">Weather</h4>
+          <h4 class="col">Weather:</h4>
           <form id="userForm" class="col s12">
             <input type="search" id="citySearch" placeholder="Enter City" class="">
             <button class="btn-small waves-effect waves-light weather-btn" type="submit" name="action">Search</button>
@@ -64,12 +64,19 @@
             </ul>
           </div>
         </div>
+
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h3 id="modal-text"></h3>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
       </div>
 
       <div id="taskDiv" class="col s12 m12 l4 indigo lighten-3 container task-div">
         <div class="row">
           <div class="task-container">
-            <h4 class="task-header">Daily Tasks</h4>
+            <h4 class="task-header">Daily Tasks:</h4>
             <div class="card task-card">
               <div class="row task-row">
                 <div class="input-field col s10 task-div" id="task1">
